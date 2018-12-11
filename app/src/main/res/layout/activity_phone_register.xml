@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorAccent"
+tools:context=".PhoneRegisterActivity"
+    style="@style/chatApp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/web_hi_res_512"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimary"/>
+
+
+    <com.hbb20.CountryCodePicker
+        android:layout_width="wrap_content"
+        android:id="@+id/cpp"
+        android:layout_below="@id/image"
+        android:layout_height="50dp"
+        android:background="@drawable/input"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="8dp"/>
+
+
+
+    <EditText
+    android:id="@+id/phoneNumber"
+        android:layout_below="@id/image"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+        android:layout_toRightOf="@id/cpp"
+    android:layout_marginTop="60dp"
+    android:layout_marginRight="24dp"
+    android:background="@drawable/input"
+    android:drawableEnd="@drawable/smartphoneimage"
+    android:hint="@string/enter_number"
+    android:inputType="phone"
+    android:paddingLeft="20dp"
+    android:paddingTop="12dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="12dp"
+    android:textColor="@color/colorText"
+    android:textSize="16sp" />
+
+
+<EditText
+    android:id="@+id/verifyCode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/phoneNumber"
+    android:layout_marginLeft="24dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="24dp"
+    android:background="@drawable/input"
+    android:hint="@string/hVerifyNumber"
+    android:textAlignment="center"
+    android:inputType="phone"
+    android:paddingLeft="20dp"
+    android:paddingTop="12dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="12dp"
+    android:textColor="@color/colorText"
+    android:textSize="16sp" />
+
+<Button
+    android:id="@+id/sendCodebtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="24dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="40dp"
+    android:layout_marginRight="24dp"
+    android:background="@drawable/buttons"
+    android:padding="8dp"
+    android:text="@string/sendCode"
+    android:textAllCaps="false"
+    android:textColor="@android:color/background_light"
+    android:textSize="16sp"
+    android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/verifyCodebtn"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/buttons"
+        android:padding="8dp"
+        android:text="@string/verifyCode"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:layout_marginBottom="40dp"
+        android:textStyle="bold" />
+</RelativeLayout>
+

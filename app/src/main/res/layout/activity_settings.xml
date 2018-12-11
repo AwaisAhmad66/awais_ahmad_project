@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#d4f5f2f2"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <include
+        layout="@layout/layout_app_bar"
+        android:id="@+id/toolbar_settings_page"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="24dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorText"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="viewStart"
+        android:text="Settings.."
+        android:paddingLeft="16dp"
+
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/profile_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:textSize="20sp"
+        android:textAlignment="viewStart"
+        android:text="Account Setting"
+        android:paddingLeft="16dp"
+        android:textAllCaps="false"
+        android:background="@drawable/setting_menu"/>
+
+    <FrameLayout
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_container"
+        />
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

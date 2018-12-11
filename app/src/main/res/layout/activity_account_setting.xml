@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".AccountSettingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <include
+        layout="@layout/layout_app_bar"
+        android:id="@+id/toolbar_settings_page"
+        />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/change_profile_image"
+                android:layout_width="150dp"
+                android:src="@drawable/profile_image"
+                android:layout_centerHorizontal="true"
+                android:layout_height="150dp"
+                android:layout_marginTop="90dp"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp" />
+
+            <EditText
+                android:id="@+id/change_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/change_profile_image"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/input"
+                android:drawableEnd="@drawable/ic_edit"
+                android:hint="Name"
+                android:padding="8dp"
+                android:textAlignment="center" />
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/change_name"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/input"
+                android:drawableEnd="@drawable/ic_edit"
+                android:hint="@string/EnterEmailAddress"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:textAlignment="center"
+                android:paddingRight="20dp"
+                android:paddingBottom="12dp"
+
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/change_settings_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_email"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="57dp"
+                android:background="@drawable/buttons"
+                android:padding="8dp"
+                android:text="save Changes"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
+
+
+
